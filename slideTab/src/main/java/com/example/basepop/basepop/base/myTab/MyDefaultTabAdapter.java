@@ -21,7 +21,7 @@ public class MyDefaultTabAdapter extends MyTabAdapter<MySlideTab.CommonTabBean>{
         title.setText(data.title);
         title.setTextSize(TypedValue.COMPLEX_UNIT_PX, resources.getDimensionPixelSize(R.dimen.sp13));
         DragBadgeView num=baseView.findViewById(R.id.item_text_msg_num);
-        num.setDragEnable(false);
+        num.setDragEnable(true);
         if (data.msgNum>0){
 
             num.setVisibility(View.VISIBLE);

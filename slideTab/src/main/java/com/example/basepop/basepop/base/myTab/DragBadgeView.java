@@ -498,9 +498,7 @@ public class DragBadgeView extends View {
             }
             recycleCacheBitmap();
 
-            if (mListener != null) {
-                mListener.onDisappear(mText);
-            }
+
         }
 
         /**
@@ -568,8 +566,11 @@ public class DragBadgeView extends View {
                             public void run() {
                                 explodeImage.setVisibility(GONE);
                                 //动画结束后DecorView中移除ImageView控件
+                                if (mListener != null) {
+                                    mListener.onDisappear(mText);
+                                }
                                 rootView.removeView(explodeImage);
-                                DragBadgeView.this.setVisibility(INVISIBLE);
+                                DragBadgeView.this.setVisibility(GONE);
                             }
                         }, totalDuration);
                     }

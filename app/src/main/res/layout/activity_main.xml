@@ -12,7 +12,7 @@
 
     <com.example.basepop.basepop.base.myTab.MySlideTab
         android:id="@+id/mTab"
-        app:myslideTab_indicator_style="2"
+        app:indicator_style="2"
         android:layout_width="match_parent"
         android:layout_height="40dp">
 
@@ -25,14 +25,13 @@
         android:layout_height="40dp">
 
     </androidx.viewpager.widget.ViewPager>
-    <com.example.basepop.basepop.base.myTab.MySlideTab2
+    <com.example.basepop.basepop.base.myTab.MySlideTab
         android:id="@+id/mTab2"
-        app:myslideTab_selectTextColor="@color/color2866FE"
-        app:myslideTab_indicator_style="2"
+        app:indicator_style="2"
         android:layout_width="match_parent"
         android:layout_height="40dp">
 
-    </com.example.basepop.basepop.base.myTab.MySlideTab2>
+    </com.example.basepop.basepop.base.myTab.MySlideTab>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/mVp2"
@@ -41,17 +40,39 @@
         android:layout_height="40dp">
 
     </androidx.viewpager.widget.ViewPager>
-    <com.example.basepop.basepop.base.myTab.MySlideTab2
+    <com.example.basepop.basepop.base.myTab.MySlideTab
         android:id="@+id/mTab3"
-        app:myslideTab_selectTextColor="@color/color2866FE"
-        app:myslideTab_indicator_style="2"
+        app:indicator_style="1"
+        app:indicator_width_auto="false"
         android:layout_width="match_parent"
         android:layout_height="40dp">
 
-    </com.example.basepop.basepop.base.myTab.MySlideTab2>
+    </com.example.basepop.basepop.base.myTab.MySlideTab>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/mVp3"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/change_style"
+        android:text="改变样式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.example.basepop.basepop.base.myTab.MySlideTab
+        android:id="@+id/mTab4"
+        app:indicator_style="2"
+        app:indicator_width_auto="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </com.example.basepop.basepop.base.myTab.MySlideTab>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mVp4"
 
         android:layout_width="match_parent"
         android:layout_height="40dp">

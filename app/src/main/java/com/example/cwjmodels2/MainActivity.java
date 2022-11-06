@@ -46,6 +46,16 @@ public class MainActivity extends AppCompatActivity {
 
         initTab2();
         initTab3();
+        initTab4();
+
+        binding.changeStyle.setOnClickListener(v->{
+            if (binding.mTab3.getIndicatorStyle()== MySlideTab.STYLE_DOWN){
+                binding.mTab3.setIndicatorStyle(MySlideTab.STYLE_FILL);
+            }else {
+                binding.mTab3.setIndicatorStyle(MySlideTab.STYLE_DOWN);
+            }
+
+        });
 
     }
 
@@ -85,8 +95,28 @@ public class MainActivity extends AppCompatActivity {
         beans.add(new MySlideTab.CommonTabBean("test666",0));
 
         tabAdapter.setList(beans,binding.mVp3);
-    }
 
+    }
+    private void initTab4(){
+        MyDefaultTabAdapter tabAdapter=new MyDefaultTabAdapter(getResources());
+        ArrayList<Fragment> list=new ArrayList<>();
+        list.add(new FirstFragment());list.add(new FirstFragment());
+        list.add(new FirstFragment());list.add(new FirstFragment());list.add(new FirstFragment());list.add(new FirstFragment());
+        MyBasePagerAdapter adapter = new MyBasePagerAdapter(getSupportFragmentManager(),list);
+        binding.mVp4.setAdapter(adapter);
+        binding.mTab4.setAutoWidth(true);
+        binding.mTab4.setTabAdapter(tabAdapter);
+        List<MySlideTab.CommonTabBean> beans=new ArrayList<>();
+        beans.add(new MySlideTab.CommonTabBean("test1",0));
+        beans.add(new MySlideTab.CommonTabBean("test2222222222222222222222",1));
+        beans.add(new MySlideTab.CommonTabBean("test33333333333333333333333",2));
+        beans.add(new MySlideTab.CommonTabBean("test4444444444444444",4));
+        beans.add(new MySlideTab.CommonTabBean("test5555555555555",3));
+        beans.add(new MySlideTab.CommonTabBean("test666",0));
+
+        tabAdapter.setList(beans,binding.mVp4);
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
