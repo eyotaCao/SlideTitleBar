@@ -3,7 +3,7 @@
 
 使用：
 ```
-implementation 'com.github.EyoutaCao:BasePop:1.0.3'
+
 ```
 
 ## 一些方法:
