@@ -1,0 +1,34 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="DragBadgeView">
+        <!--文字-->
+        <attr name="text" format="string"/>
+        <!--文字大小-->
+        <attr name="textSize" format="dimension"/>
+        <!--文字颜色-->
+        <attr name="textColor" format="color"/>
+        <!--背景颜色-->
+        <attr name="bgColor" format="color"/>
+        <!--贝塞尔曲线消失的最大范围-->
+        <attr name="maxMoveRange" format="dimension"/>
+        <!--能否拖拽-->
+        <attr name="dragEnable" format="boolean"/>
+        <!--最大显示数值-->
+        <attr name="maxShowValue" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MySlideTab">
+        <attr name="myslideTab_textColor" format="color"/>
+        <attr name="myslideTab_selectTextColor" format="color"/>
+        <attr name="myslideTab_indicator_style" format="integer"/>
+        <attr name="myslideTab_indicator_height" format="dimension"/>
+        <attr name="myslideTab_indicator_width_auto" format="boolean"/>
+        <attr name="myslideTab_indicator_margin" format="dimension"/>
+
+    </declare-styleable>
+</resources>

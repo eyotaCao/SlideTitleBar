@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_ll"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_text"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/color181D40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.example.basepop.basepop.base.myTab.DragBadgeView
+        android:id="@+id/item_text_msg_num"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dp3"
+        app:maxShowValue="99"
+        app:bgColor="@color/colorFFFFFF"
+        app:textColor="@color/color2866FE"
+        android:paddingLeft="@dimen/dp3"
+        android:paddingRight="@dimen/dp3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp16"
+        android:textSize="@dimen/sp10"
+        android:gravity="center" />
+
+
+
+</LinearLayout>

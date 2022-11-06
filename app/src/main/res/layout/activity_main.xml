@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp100"
+    tools:context=".MainActivity">
+
+
+
+    <com.example.basepop.basepop.base.myTab.MySlideTab
+        android:id="@+id/mTab"
+        app:myslideTab_indicator_style="2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </com.example.basepop.basepop.base.myTab.MySlideTab>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mVp"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </androidx.viewpager.widget.ViewPager>
+    <com.example.basepop.basepop.base.myTab.MySlideTab2
+        android:id="@+id/mTab2"
+        app:myslideTab_selectTextColor="@color/color2866FE"
+        app:myslideTab_indicator_style="2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </com.example.basepop.basepop.base.myTab.MySlideTab2>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mVp2"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </androidx.viewpager.widget.ViewPager>
+    <com.example.basepop.basepop.base.myTab.MySlideTab2
+        android:id="@+id/mTab3"
+        app:myslideTab_selectTextColor="@color/color2866FE"
+        app:myslideTab_indicator_style="2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </com.example.basepop.basepop.base.myTab.MySlideTab2>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mVp3"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
