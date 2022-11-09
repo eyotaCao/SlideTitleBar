@@ -197,7 +197,7 @@ public class MySlideTab extends HorizontalScrollView {
                 public void onClick(View v) {
                     if (mViewPager!=null){
 
-                        select(i2,false);
+                        select(i2);
                     }
                 }
             });
@@ -244,7 +244,7 @@ public class MySlideTab extends HorizontalScrollView {
         canvas.drawRoundRect(rectFIndicator, inRound,inRound,indicatorPaint);
     }
 
-    private void select(int index,boolean moveViewpager){
+    private void select(int index){
         mSelectIndex=index;
         for (int i=0;i<mTabViews.size();i++){
             if (index==i){
@@ -259,9 +259,10 @@ public class MySlideTab extends HorizontalScrollView {
                 title.setTextColor(textColor);
             }
         }
+        refreshIndicator();
 
         if (mViewPager!=null){
-            mViewPager.setCurrentItem(index,moveViewpager);
+            mViewPager.setCurrentItem(index,false);
         }
 
 
